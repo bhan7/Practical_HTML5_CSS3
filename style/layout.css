@@ -1,0 +1,219 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: Verdana;
+}
+
+@font-face {
+  font-family: headerfont;
+  src: url('../fonts/Gotham-Book.ttf');
+}
+
+header {
+  font-weight: bold;
+}
+
+.header-logo {
+  float: left;
+  margin-right: 10px;
+}
+
+.header-logo img {
+  height: 60px;
+  width: 60px;
+}
+
+#main-header {
+  height: 80px;
+}
+
+.search-box {
+  float: right;
+  padding: 5px;
+  margin: 10px 10px;
+  width: 200px;
+}
+
+#header-name {
+  font-family: headerfont;
+  font-size: 40px;
+  color: #603813;
+  padding: 15px;
+  margin: 8px 0;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px #5f2c17;
+}
+
+.nav-bar {
+  /*background: #603813;*/
+  background: linear-gradient(to right, #603813, #341c05);
+  color: #fff;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  display: inline;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+}
+
+.nav-bar .navlink {
+  color: #fff;
+}
+
+#welcome-image {
+  float: left;
+  width: 700px;
+  margin-top: 50px;
+}
+
+#coffee-of-month {
+  float: right;
+  width: 300px;
+  margin-top: 50px;
+}
+
+#welcome-text {
+  float: left;
+  width: 70%;
+  font-size: 12px;
+  margin: 20px 0;
+  /*column-count: 2;
+  -webkit-column-count: 2;*/
+  column-width: 200px;
+  column-gap: 40px;
+  -webkit-column-width: 200px;
+  -webkit-column-gap: 40px;
+}
+
+#welcome-text header {
+  color: #603813;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+#events {
+  float: right;
+  width: 30%;
+  margin: 20px 0;
+}
+
+#events header {
+  margin-left: 10px;
+  color: #603813;
+  font-size: 15px;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+#events ul {
+  list-style: none;
+}
+
+#events ul li {
+  margin-bottom: 3px;
+}
+
+#best-sellers {
+  height: 100%;
+  width: 700px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.background-gradient {
+  background: #603813;
+  color: #fff;
+}
+
+.product-article {
+  float: left;
+  margin: 20px 0;
+}
+
+.product-article figure img {
+  width: 90px;
+}
+
+.add-to-cart-button {
+  cursor: pointer;
+  padding: 4px 25px;
+  background: #603813;
+  border: 1px solid #381f09;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0,75);
+  color: #f3f3f3;
+  font-size: 0.8em;
+  width: 80px;
+}
+
+.add-to-cart-button:hover, .add-to-cart-button:focus {
+  background-color: #512c0a;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.75);
+}
+
+.accessories-best-sellers {
+  clear: both;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  background-color: #5c5045;
+  margin: 20px 0px 20px;
+  padding: 5px;
+  /*transform: rotate(10deg);*/
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.all-coffees {
+  width: 70%;
+  float: left;
+}
+
+.product-article-wide {
+  margin: 20px auto;
+}
+
+.product-article-wide img {
+  width: 130px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.product-article-wide .product-article-wide-content {
+  width: 500px;
+  float: right;
+}
+
+.coffee-details figure {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.coffee-details img {
+  width: 150px;
+}
+
+.coffee-details .product-article-content {
+  width: 600px;
+  float: right;
+}
+
+.product-article-wide-price, .product-article-price {
+  color: green;
+  font-weight: bold;
+}
+
+#shopping-cart {
+  float: right;
+  width: 25%;
+}

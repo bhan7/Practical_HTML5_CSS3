@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style/layout.css">
+</head>
+<body>
+  <header id="main-header">
+    <div>
+      <a class="header-logo" href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <span id="header-name">Bruce's Coffee Shop</span>
+      <input type="search" class="search-box" placeholder="Search our store">
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="blog.html" class="navlink">Blog</a></li>
+        <li><a href="all-coffees.html" class="navlink">Our Coffees</a></li>
+        <li><a href="accessories.html" class="navlink">Accessories</a></li>
+        <li><a href="gifts.html" class="navlink"></a>Gifts</li>
+        <li><a href="find-us.html" class="navlink">Find Us</a></li>
+        <li><a href="checkout.html" class="navlink">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="welcome-image">
+    <img src="images/coffeeheader.jpg">
+  </div>
+  <div id="coffee-of-month">
+    <img src="images/cotm.png">
+  </div>
+
+  <section class="coffee-details">
+    <header class="block-header">
+      <span>Checkout</span>
+    </header>
+  
+    <form action="#" id="mainForm" method="post">
+      <fieldset class="box">
+        <legend>Your details</legend>
+        <div>
+          <p>
+            <label for="firstNameInput" class="text-label">First Name</label>
+            <input type="text" id="firstNameInput" name="FirstName" class="text-input" autofocus="autofocus" maxlength="30" required>
+          </p>
+          <p>
+            <label for="lastNameInput" class="text-label">First Name</label>
+            <input type="text" id="lastNameInput" name="LastName" class="text-input" maxlength="15" required>
+          </p>
+          <p>
+            <label for="emailInput" class="text-label">Email</label>
+            <input type="email" id="emailInput" name="Email" class="text-input" required>
+          </p>
+          <p>
+            <label for="streetInput" class="text-label">Street</label>
+            <input type="text" id="streetInput" name="Street" class="text-input">
+          </p>
+          <p>
+            <label for="zipInput" class="text-label">Zip Code</label>
+            <input type="text" id="zipInput" name="Zip" class="text-input">
+          </p>
+          <p>
+            <label for="cityInput" class="text-label">City</label>
+            <input type="text" id="cityInput" name="City" class="text-input">
+          </p>
+          <p>
+            <label for="phoneInput" class="text-label">Phone Number</label>
+            <input type="text" id="phoneInput" name="PhoneNumber" class="text-input">
+          </p>
+          <p>
+            <label for="remarkInput" class="text-label">Remarks</label>
+            <input type="text" id="remarkInput" name="Remark" class="text-input">
+          </p>
+        </div>
+      </fieldset><br>
+
+      <fieldset class="box">
+        <legend>Your order</legend>
+
+        <p>
+            <label for="deliveryDateInput" class="text-label">Requested Delivery Date</label>
+            <input type="date" id="deliveryDateInput" name="DeliveryDate" class="text-input">
+        </p>
+        <p>
+            <label for="colorInput" class="text-label">Wrapping paper color</label>
+            <input type="color" id="colorInput" name="Color" class="text-input">
+        </p>
+        <p>
+            <label for="bowInput" class="text-label">How many bows on the package?</label>
+            <input type="number" id="bowInput" name="Bow" class="text-input" min="0" max="5" placeholder="Enter a value between 0 and 5">
+        </p>
+      </fieldset>
+      <input type="submit" class="submit-button" value="Place Order">
+    </form>
+  </section>
+</body>

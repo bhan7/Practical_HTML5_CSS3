@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Coffees</title>
+  <link rel="stylesheet" href="style/layout.css">
+  <script src="scripts/dragAndDrop.js"></script>
+</head>
+<body>
+  <header id="main-header">
+    <div>
+      <a class="header-logo" href="index.html">
+        <img src="images/logo.png" alt="Logo">
+      </a>
+      <span id="header-name">Bruce's Coffee Shop</span>
+      <input type="search" class="search-box" placeholder="Search our store">
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html" class="navlink">Home</a></li>
+        <li><a href="blog.html" class="navlink">Blog</a></li>
+        <li><a href="all-coffees.html" class="navlink">Our Coffees</a></li>
+        <li><a href="accessories.html" class="navlink">Accessories</a></li>
+        <li><a href="gifts.html" class="navlink"></a>Gifts</li>
+        <li><a href="find-us.html" class="navlink">Find Us</a></li>
+        <li><a href="checkout.html" class="navlink">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="welcome-image">
+    <img src="images/coffeeheader.jpg">
+  </div>
+  <div id="coffee-of-month">
+    <img src="images/cotm.png">
+  </div>
+
+  <section class="all-coffees">
+    <header class="block-header">
+      <span>Espresso coffee beans</span>
+    </header>
+    <article class="product-article-wide" id="coffee-1" data-price="10.00">
+        <img src="images/coffee/coffee.png" class="product-article-wide-thumbnail" id="coffee1">
+        <div class="product-article-wide-content">
+          <header>
+            <span class="product-article-wide-name">Coffee 1</span>
+          </header>
+          <p class="product-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+          <p class="product-article-wide-price">$10</p>
+        </div>
+    </article>
+    <article class="product-article-wide" id="coffee-2" data-price="10.00">
+        <img src="images/coffee/coffee.png" class="product-article-wide-thumbnail" id="coffee2">
+        <div class="product-article-wide-content">
+          <header>
+            <span class="product-article-wide-name">Coffee 2</span>
+          </header>
+          <p class="product-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+          <p class="product-article-wide-price">$10</p>
+        </div>
+    </article>
+    <article class="product-article-wide" id="coffee-3" data-price="15.00">
+        <img src="images/coffee/coffee.png" class="product-article-wide-thumbnail" id="coffee3">
+        <div class="product-article-wide-content">
+          <header>
+            <span class="product-article-wide-name">Coffee 3</span>
+          </header>
+          <p class="product-article-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+          <p class="product-article-wide-price">$15</p>
+        </div>
+    </article>
+  </section>
+  <div id="shopping-cart">
+    <header class="block-header">
+      <span>Shopping cart</span>
+    </header>
+    <ul></ul>
+  </div>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", addDnDHandlers, false);
+  </script>
+  
+</body>
+</html>
